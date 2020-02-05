@@ -30,7 +30,6 @@ class Content extends Component{
     render(){
         return(
             <div className = "content">
-                <br/>
                 <p>Enter first name</p>
                 <input type = "text" name = "fname" placeholder ="FirstName" onChange = {this.handleChange}/>
                 <p>Enter last name</p>
@@ -39,8 +38,7 @@ class Content extends Component{
                 <input type = "text" name = "dob" placeholder ="DOB" onChange = {this.handleChange}/>
                 <p>Email</p>
                 <input type = "text" name = "mail" placeholder =" xyz@mail.com" onChange = {this.handleChange}/><br/>
-
-                <br/><br/><br/>
+                <br/><br/>
                 <button onClick = {this.handleButton}> Submit Details </button><br/>
             </div>
         )
