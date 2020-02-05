@@ -9,15 +9,17 @@ class Content extends Component{
     }
     render(){
         return(
-            <div>
-                
-                <input type = "text" placeholder ="FirstName" />
-                <input type = "text" placeholder ="LastName" />
-                <input type = "text" placeholder ="DOB" />
-                <button> Submit Details </button>
-
+            <div className = "content">
+                <br/>
+                <input type = "text" placeholder ="FirstName" /><br/>
+                <br/>
+                <input type = "text" placeholder ="LastName" /><br/>
+                <br/>
+                <input type = "text" placeholder ="DOB" /><br/>
+                <br/><br/><br/>
+                <button> Submit Details </button><br/>
             </div>
         )
     }
 }
-export default Content
+export default Content 
