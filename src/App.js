@@ -1,12 +1,15 @@
-import React from 'react'
+import React from "react"
+import Header from "./components/Header"
+import Content from "./components/Content"
+import "./style.css"
+
 function App(){
   return(
-    <div>
-      <h1> Hello just testing </h1>
-      <button> Click me!</button>
-      <h2> Creating forms today, testing again </h2>
+    <div className = "page">
+      <Header/>
+      <Content/>
     </div>
   )
 }
 
-export default App;
+export default App
