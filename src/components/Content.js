@@ -1,23 +1,47 @@
 import React, {Component} from "react"
+import "./style.css"
 
 class Content extends Component{
     constructor(){
         super()
         this.state = {
-            names: "Nikhath"
+            fname: "",
+            lname: "",
+            dob: ""
         }
+        this.handleChange = this.handleChange.bind(this)
+        this.handleButton = this.handleButton.bind(this)
+    }
+    handleChange(event){
+        this.setState(
+            {
+                [event.target.name] : event.target.value
+            }
+        )
+
+    }
+    handleButton(){
+        return(
+            <div>
+                <p>{this.state.fname}</p>
+            </div>
+        )
     }
     render(){
         return(
             <div className = "content">
                 <br/>
-                <input type = "text" placeholder ="FirstName" /><br/>
-                <br/>
-                <input type = "text" placeholder ="LastName" /><br/>
-                <br/>
-                <input type = "text" placeholder ="DOB" /><br/>
+                <p>Enter first name</p>
+                <input type = "text" name = "fname" placeholder ="FirstName" onChange = {this.handleChange}/>
+                <p>Enter last name</p>
+                <input type = "text" name = "lname" placeholder ="LastName" onChange = {this.handleChange}/>
+                <p>Birth date</p>
+                <input type = "text" name = "dob" placeholder ="DOB" onChange = {this.handleChange}/>
+                <p>Email</p>
+                <input type = "text" name = "mail" placeholder =" xyz@mail.com" onChange = {this.handleChange}/><br/>
+
                 <br/><br/><br/>
-                <button> Submit Details </button><br/>
+                <button onClick = {this.handleButton}> Submit Details </button><br/>
             </div>
         )
     }
