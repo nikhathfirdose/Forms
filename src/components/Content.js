@@ -40,6 +40,7 @@ class Content extends Component{
                 <input type = "text" name = "mail" placeholder =" xyz@mail.com" onChange = {this.handleChange}/><br/>
                 <br/><br/>
                 <button onClick = {this.handleButton}> Submit Details </button><br/>
+                <p> editing to check the test branch on github</p>
             </div>
         )
     }
