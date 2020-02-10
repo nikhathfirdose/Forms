@@ -31,16 +31,16 @@ class Content extends Component{
         return(
             <div className = "content">
                 <p>Enter first name</p>
-                <input type = "text" name = "fname" placeholder ="FirstName" onChange = {this.handleChange}/>
+                <input type = "text" required  name = "fname" placeholder ="FirstName" onChange = {this.handleChange}/>
                 <p>Enter last name</p>
-                <input type = "text" name = "lname" placeholder ="LastName" onChange = {this.handleChange}/>
+                <input type = "text" required name = "lname" placeholder ="LastName" onChange = {this.handleChange}/>
                 <p>Birth date</p>
-                <input type = "text" name = "dob" placeholder ="DOB" onChange = {this.handleChange}/>
+                <input type = "text"required  name = "dob" placeholder ="DOB" onChange = {this.handleChange}/>
                 <p>Email</p>
-                <input type = "text" name = "mail" placeholder =" xyz@mail.com" onChange = {this.handleChange}/><br/>
+                <input type = "text" required name = "mail" placeholder =" xyz@mail.com" onChange = {this.handleChange}/><br/>
                 <br/><br/>
                 <button onClick = {this.handleButton}> Submit Details </button><br/>
-                <p> editing to check the test branch on github</p>
+                
             </div>
         )
     }
